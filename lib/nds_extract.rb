@@ -47,8 +47,11 @@ def total_gross(source)
   index = 0 
   
   # puts list_of_directors[index]
-  new = directors_totals(source)
-  pp new
+  director_gross_hash = directors_totals(source)
+  # pp director_gross_hash
+  director_list_array = list_of_directors(source)
+  pp director_list_array
+  
   
   while index < list_of_directors.length do 
     total += directors_totals[list_of_directors[index]]
