@@ -46,15 +46,15 @@ def total_gross(source)
   total = 0 
   index = 0 
   
-  # puts list_of_directors[index]
   director_gross_hash = directors_totals(source)
-  # pp director_gross_hash
+  # this is a hash of director's names (keys) and grosses (values)
   director_list_array = list_of_directors(source)
-  pp director_list_array[index]
+  # this points to each director's name: director_list_array[index]
   
-  
-  while index < list_of_directors.length do 
-    total += directors_totals[list_of_directors[index]]
+  while index < director_list_array.length do 
+    total += director_gross_hash[director_list_array[index]] 
+    # this makes more sense if tracing/looking from the inside out
+    # index at 0 points to "Steven Spielberg" in the array. "Stephen Spielberg" in the hash points to the gross of his movies. 
     index += 1 
   end 
   
