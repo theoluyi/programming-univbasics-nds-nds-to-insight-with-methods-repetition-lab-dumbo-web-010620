@@ -47,8 +47,9 @@ def total_gross(source)
   index = 0 
   
   director_gross_hash = directors_totals(source)
-  # this is a hash of director's names (keys) and grosses (values)
   director_list_array = list_of_directors(source)
+  
+  # this is a hash of director's names (keys) and grosses (values)
   # this points to each director's name: director_list_array[index]
   
   while index < director_list_array.length do 
