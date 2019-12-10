@@ -50,7 +50,7 @@ def total_gross(source)
   director_gross_hash = directors_totals(source)
   # pp director_gross_hash
   director_list_array = list_of_directors(source)
-  pp director_list_array[0]
+  pp director_list_array[index]
   
   
   while index < list_of_directors.length do 
